@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Apply Leave</title>
+    <style>
+         button {
+    background-color: #2839a7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+   
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Apply for Leave</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="leave_history.html">Leave History</a>
+            <a href="admin_panel.html">Admin Panel</a>
+        </nav>
+    </header>
+
+    <main>
+        <form class="leave-form">
+            <label for="leaveType">Leave Type:</label>
+            <select id="leaveType" required>
+                <option value="sick">Sick Leave</option>
+                <option value="casual">Casual Leave</option>
+                <option value="vacation">Vacation</option>
+            </select>
+<br><br>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" required>
+<br><br>
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" required>
+<br><br>
+            <label for="reason">Reason:</label>
+            <textarea id="reason" required></textarea>
+<br><br>
+            <button type="submit">Submit Leave Request</button>
+<br><br>
+        </form>
+    </main>
+
+    <footer style="position: absolute; bottom: 0; left: 0; right: 0;">
+        <p>&copy; 2024 Employee Leave Management System</p>
+    </footer>
+</body>
+</html>

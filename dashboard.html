@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        button {
+    background-color: #2839a7;
+    
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+   
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Apply for Leave</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="leave_history.html">Leave History</a>
+            <a href="admin_panel.html">Admin Panel</a>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+     <button><a href="dashboard.html" style=" text-decoration: none; color: white;">Dashboard</a></button>
+       <button><a href="manage-users.html" style=" text-decoration: none; color: white;">Manage Users</a></button>
+       <button><a href="settings.html" style=" text-decoration: none; color: white;" >Settings</a></button>
+        <button><a href="reports.html" style=" text-decoration: none; color: white;">Reports</a></button>
+       <button><a href="logout.html" style=" text-decoration: none; color: white;" >Logout</a></button>
+    </div>
+
+    <div class="content">
+        <h1>Dashboard</h1>
+        
+        <div>
+            <div class="card user-stats">
+                <h5>User Statistics</h5>
+                <ul>
+                    <li><strong>Total Users:</strong> 150</li>
+                    <li><strong>Active Users:</strong> 120</li>
+                    <li><strong>Pending Approvals:</strong> 10</li>
+                </ul>
+            </div>
+
+            <div class="card recent-activity">
+                <h5>Recent Activity</h5>
+                <ul>
+                    <li>User 1 logged in at 10:00 AM</li>
+                    <li>User 2 updated their profile at 10:15 AM</li>
+                    <li>User 3 requested a password reset at 10:30 AM</li>
+                </ul>
+            </div>
+
+            <div class="card quick-actions">
+                <h5>Quick Actions</h5>
+                <button class="button">Add New User</button>
+                <button class="button">View Reports</button>
+                <button class="button">Manage Settings</button>
+            </div>
+
+            <div class="card notifications">
+                <h5>Notifications</h5>
+                <ul>
+                    <li>You have 5 new messages.</li>
+                    <li>System update scheduled for tonight.</li>
+                    <li>Reminder: Review user feedback.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer style="position: absolute; bottom: 0; left: 0; right: 0;">
+        <p>&copy; 2024 Employee Leave Management System</p>
+    </footer>
+</body>
+</html>
